@@ -1,0 +1,602 @@
+[
+  {
+    "user": "Arguello@ti.go",
+    "pass": "233828",
+    "expire": "2026-04-05",
+    "device": "PIPN-TX5N-SR49"
+  },
+  {
+    "user": "vagabundo@ti.one",
+    "pass": "726100",
+    "expire": "nul",
+    "device": "nul"
+  },
+  {
+    "user": "cliente3",
+    "pass": "777827",
+    "expire": "2026-12-31",
+    "device": "6NBT-KBQ3-0TVY"
+  },
+  {
+    "user": "cliente4",
+    "pass": "864543",
+    "expire": "2026-12-31",
+    "device": "OLKP-JMVO-TZ59"
+  },
+  {
+    "user": "cliente5",
+    "pass": "200652",
+    "expire": "2026-12-31",
+    "device": "3E74-DMZL-T8M0"
+  },
+  {
+    "user": "cliente6",
+    "pass": "883590",
+    "expire": "2026-12-31",
+    "device": "582V-EZ83-L1LC"
+  },
+  {
+    "user": "cliente7",
+    "pass": "720365",
+    "expire": "2026-12-31",
+    "device": "3UGY-5FUO-2531"
+  },
+  {
+    "user": "cliente8",
+    "pass": "310033",
+    "expire": "2026-12-31",
+    "device": "II4V-ROND-HOQ3"
+  },
+  {
+    "user": "cliente9",
+    "pass": "759420",
+    "expire": "2026-12-31",
+    "device": "P740-ZIPQ-ZW45"
+  },
+  {
+    "user": "cliente10",
+    "pass": "595109",
+    "expire": "2026-12-31",
+    "device": "3ECR-JQ84-BDDI"
+  },
+  {
+    "user": "cliente11",
+    "pass": "568682",
+    "expire": "2026-12-31",
+    "device": "L8QQ-RF7F-2G5O"
+  },
+  {
+    "user": "cliente12",
+    "pass": "366522",
+    "expire": "2026-12-31",
+    "device": "CT9Z-YA61-KIWP"
+  },
+  {
+    "user": "cliente13",
+    "pass": "189533",
+    "expire": "2026-12-31",
+    "device": "H9TV-OTG2-P9L4"
+  },
+  {
+    "user": "cliente14",
+    "pass": "772639",
+    "expire": "2026-12-31",
+    "device": "U23C-39WY-W5IH"
+  },
+  {
+    "user": "cliente15",
+    "pass": "387761",
+    "expire": "2026-12-31",
+    "device": "SYJL-4LT3-22ST"
+  },
+  {
+    "user": "cliente16",
+    "pass": "888536",
+    "expire": "2026-12-31",
+    "device": "VJ19-GAVV-6JVK"
+  },
+  {
+    "user": "cliente17",
+    "pass": "370865",
+    "expire": "2026-12-31",
+    "device": "4QQM-ZDLF-6X3L"
+  },
+  {
+    "user": "cliente18",
+    "pass": "629472",
+    "expire": "2026-12-31",
+    "device": "H7HB-OFFZ-ROUL"
+  },
+  {
+    "user": "cliente19",
+    "pass": "456741",
+    "expire": "2026-12-31",
+    "device": "4JHC-UDF8-4Z61"
+  },
+  {
+    "user": "cliente20",
+    "pass": "397092",
+    "expire": "2026-12-31",
+    "device": "JEPV-FS6S-547Z"
+  },
+  {
+    "user": "cliente21",
+    "pass": "522926",
+    "expire": "2026-12-31",
+    "device": "7DDB-6HR3-366D"
+  },
+  {
+    "user": "cliente22",
+    "pass": "870948",
+    "expire": "2026-12-31",
+    "device": "9EOI-WXMS-L2FC"
+  },
+  {
+    "user": "cliente23",
+    "pass": "309558",
+    "expire": "2026-12-31",
+    "device": "8DCX-PEM2-XEOJ"
+  },
+  {
+    "user": "cliente24",
+    "pass": "359322",
+    "expire": "2026-12-31",
+    "device": "B2HU-M4ME-VZAW"
+  },
+  {
+    "user": "cliente25",
+    "pass": "744191",
+    "expire": "2026-12-31",
+    "device": "VHA6-AZ23-KC5L"
+  },
+  {
+    "user": "cliente26",
+    "pass": "966122",
+    "expire": "2026-12-31",
+    "device": "F7M3-FG5K-EV8R"
+  },
+  {
+    "user": "cliente27",
+    "pass": "663497",
+    "expire": "2026-12-31",
+    "device": "TEX5-7VMC-S6GQ"
+  },
+  {
+    "user": "cliente28",
+    "pass": "555676",
+    "expire": "2026-12-31",
+    "device": "AM5Q-3NPQ-AHWG"
+  },
+  {
+    "user": "cliente29",
+    "pass": "131886",
+    "expire": "2026-12-31",
+    "device": "LNCS-7KEC-EBSW"
+  },
+  {
+    "user": "cliente30",
+    "pass": "598545",
+    "expire": "2026-12-31",
+    "device": "KM6S-FAOG-JIJ9"
+  },
+  {
+    "user": "cliente31",
+    "pass": "658294",
+    "expire": "2026-12-31",
+    "device": "O7CY-TE3K-SZJ0"
+  },
+  {
+    "user": "cliente32",
+    "pass": "152396",
+    "expire": "2026-12-31",
+    "device": "QCLR-HBGO-D2HE"
+  },
+  {
+    "user": "cliente33",
+    "pass": "878079",
+    "expire": "2026-12-31",
+    "device": "C5AM-WUT7-S7DA"
+  },
+  {
+    "user": "cliente34",
+    "pass": "439566",
+    "expire": "2026-12-31",
+    "device": "S6YC-E86M-R91W"
+  },
+  {
+    "user": "cliente35",
+    "pass": "131948",
+    "expire": "2026-12-31",
+    "device": "HSRR-O40B-XR2E"
+  },
+  {
+    "user": "cliente36",
+    "pass": "708380",
+    "expire": "2026-12-31",
+    "device": "KY2S-RU8N-QE09"
+  },
+  {
+    "user": "cliente37",
+    "pass": "793944",
+    "expire": "2026-12-31",
+    "device": "G1ZL-MSAH-HNF2"
+  },
+  {
+    "user": "cliente38",
+    "pass": "244827",
+    "expire": "2026-12-31",
+    "device": "8E66-NWRX-DAWV"
+  },
+  {
+    "user": "cliente39",
+    "pass": "935539",
+    "expire": "2026-12-31",
+    "device": "2TRH-7DO6-G870"
+  },
+  {
+    "user": "cliente40",
+    "pass": "537542",
+    "expire": "2026-12-31",
+    "device": "W72O-3FUV-SOS3"
+  },
+  {
+    "user": "cliente41",
+    "pass": "609928",
+    "expire": "2026-12-31",
+    "device": "ECAM-IR37-WJKJ"
+  },
+  {
+    "user": "cliente42",
+    "pass": "760465",
+    "expire": "2026-12-31",
+    "device": "0PAT-V33H-YM32"
+  },
+  {
+    "user": "cliente43",
+    "pass": "902083",
+    "expire": "2026-12-31",
+    "device": "J2KE-K2TY-2E7H"
+  },
+  {
+    "user": "cliente44",
+    "pass": "247826",
+    "expire": "2026-12-31",
+    "device": "XFAM-YXXW-ZN5R"
+  },
+  {
+    "user": "cliente45",
+    "pass": "445350",
+    "expire": "2026-12-31",
+    "device": "CIE0-98B9-XCJC"
+  },
+  {
+    "user": "cliente46",
+    "pass": "283534",
+    "expire": "2026-12-31",
+    "device": "YHFM-LOYP-YC8I"
+  },
+  {
+    "user": "cliente47",
+    "pass": "564621",
+    "expire": "2026-12-31",
+    "device": "TTU5-LSQQ-NE13"
+  },
+  {
+    "user": "cliente48",
+    "pass": "263313",
+    "expire": "2026-12-31",
+    "device": "XKYU-1P6U-5VDN"
+  },
+  {
+    "user": "cliente49",
+    "pass": "818961",
+    "expire": "2026-12-31",
+    "device": "8D00-LYSE-BJ3Z"
+  },
+  {
+    "user": "cliente50",
+    "pass": "617846",
+    "expire": "2026-12-31",
+    "device": "QJNF-1D3P-4ON4"
+  },
+  {
+    "user": "cliente51",
+    "pass": "415319",
+    "expire": "2026-12-31",
+    "device": "574A-G0UI-OOM5"
+  },
+  {
+    "user": "cliente52",
+    "pass": "446301",
+    "expire": "2026-12-31",
+    "device": "ZDX6-9KWM-ZOFI"
+  },
+  {
+    "user": "cliente53",
+    "pass": "712693",
+    "expire": "2026-12-31",
+    "device": "CLSO-3NC5-LEY3"
+  },
+  {
+    "user": "cliente54",
+    "pass": "800674",
+    "expire": "2026-12-31",
+    "device": "HYMR-RD32-SBTC"
+  },
+  {
+    "user": "cliente55",
+    "pass": "534504",
+    "expire": "2026-12-31",
+    "device": "RLHQ-KIHR-RTS5"
+  },
+  {
+    "user": "cliente56",
+    "pass": "177766",
+    "expire": "2026-12-31",
+    "device": "U86V-OF0S-0HOD"
+  },
+  {
+    "user": "cliente57",
+    "pass": "683770",
+    "expire": "2026-12-31",
+    "device": "7OTF-FSXQ-K82N"
+  },
+  {
+    "user": "cliente58",
+    "pass": "839173",
+    "expire": "2026-12-31",
+    "device": "DN3R-1PBX-6SDI"
+  },
+  {
+    "user": "cliente59",
+    "pass": "243904",
+    "expire": "2026-12-31",
+    "device": "3AV3-3Q3S-25BB"
+  },
+  {
+    "user": "cliente60",
+    "pass": "453140",
+    "expire": "2026-12-31",
+    "device": "9Y0D-LSY1-1WBN"
+  },
+  {
+    "user": "cliente61",
+    "pass": "631779",
+    "expire": "2026-12-31",
+    "device": "NLVT-0LOO-T3XR"
+  },
+  {
+    "user": "cliente62",
+    "pass": "376247",
+    "expire": "2026-12-31",
+    "device": "JT18-4LIH-VX46"
+  },
+  {
+    "user": "cliente63",
+    "pass": "516142",
+    "expire": "2026-12-31",
+    "device": "NFMU-O300-ALW9"
+  },
+  {
+    "user": "cliente64",
+    "pass": "568212",
+    "expire": "2026-12-31",
+    "device": "Z7A7-II52-5AHV"
+  },
+  {
+    "user": "cliente65",
+    "pass": "198767",
+    "expire": "2026-12-31",
+    "device": "GU2L-PINL-5WP6"
+  },
+  {
+    "user": "cliente66",
+    "pass": "135113",
+    "expire": "2026-12-31",
+    "device": "KS3I-8UQ3-S83T"
+  },
+  {
+    "user": "cliente67",
+    "pass": "898763",
+    "expire": "2026-12-31",
+    "device": "26GU-IWWH-800D"
+  },
+  {
+    "user": "cliente68",
+    "pass": "602713",
+    "expire": "2026-12-31",
+    "device": "5QIH-4DNX-607Y"
+  },
+  {
+    "user": "cliente69",
+    "pass": "228871",
+    "expire": "2026-12-31",
+    "device": "YXAC-Z0I1-KH75"
+  },
+  {
+    "user": "cliente70",
+    "pass": "879038",
+    "expire": "2026-12-31",
+    "device": "CHLQ-BGSU-UMT4"
+  },
+  {
+    "user": "cliente71",
+    "pass": "243525",
+    "expire": "2026-12-31",
+    "device": "IS9K-BTOV-C22K"
+  },
+  {
+    "user": "cliente72",
+    "pass": "782278",
+    "expire": "2026-12-31",
+    "device": "S2EW-JCA4-RXUH"
+  },
+  {
+    "user": "cliente73",
+    "pass": "822851",
+    "expire": "2026-12-31",
+    "device": "MDVP-V11L-IJ7O"
+  },
+  {
+    "user": "cliente74",
+    "pass": "381080",
+    "expire": "2026-12-31",
+    "device": "ITDN-JMM7-SLC7"
+  },
+  {
+    "user": "cliente75",
+    "pass": "667683",
+    "expire": "2026-12-31",
+    "device": "Z5MK-ZCJM-Z96S"
+  },
+  {
+    "user": "cliente76",
+    "pass": "317992",
+    "expire": "2026-12-31",
+    "device": "YZSX-91Y7-WCX2"
+  },
+  {
+    "user": "cliente77",
+    "pass": "661900",
+    "expire": "2026-12-31",
+    "device": "5E3J-9SV1-0V3P"
+  },
+  {
+    "user": "cliente78",
+    "pass": "369803",
+    "expire": "2026-12-31",
+    "device": "7NIN-IEPJ-9MIL"
+  },
+  {
+    "user": "cliente79",
+    "pass": "271484",
+    "expire": "2026-12-31",
+    "device": "12W3-GV06-BDPP"
+  },
+  {
+    "user": "cliente80",
+    "pass": "202613",
+    "expire": "2026-12-31",
+    "device": "5OTX-DD57-N18S"
+  },
+  {
+    "user": "cliente81",
+    "pass": "221927",
+    "expire": "2026-12-31",
+    "device": "02H1-DXKP-L06Y"
+  },
+  {
+    "user": "cliente82",
+    "pass": "240260",
+    "expire": "2026-12-31",
+    "device": "HF8L-VBMY-K5YE"
+  },
+  {
+    "user": "cliente83",
+    "pass": "891264",
+    "expire": "2026-12-31",
+    "device": "7HJC-0E18-JQ81"
+  },
+  {
+    "user": "cliente84",
+    "pass": "370158",
+    "expire": "2026-12-31",
+    "device": "8BAE-04MH-LTY4"
+  },
+  {
+    "user": "cliente85",
+    "pass": "671675",
+    "expire": "2026-12-31",
+    "device": "VCG2-UT4R-L2P8"
+  },
+  {
+    "user": "cliente86",
+    "pass": "617586",
+    "expire": "2026-12-31",
+    "device": "AG8B-92IB-L2J0"
+  },
+  {
+    "user": "cliente87",
+    "pass": "266921",
+    "expire": "2026-12-31",
+    "device": "Z10E-WDHZ-Y2DS"
+  },
+  {
+    "user": "cliente88",
+    "pass": "257198",
+    "expire": "2026-12-31",
+    "device": "P8R7-6OVT-121A"
+  },
+  {
+    "user": "cliente89",
+    "pass": "777915",
+    "expire": "2026-12-31",
+    "device": "81MI-KGWD-0VTR"
+  },
+  {
+    "user": "cliente90",
+    "pass": "211031",
+    "expire": "2026-12-31",
+    "device": "OSX9-IHVI-4PX0"
+  },
+  {
+    "user": "cliente91",
+    "pass": "438517",
+    "expire": "2026-12-31",
+    "device": "MBSR-NL6X-S8VX"
+  },
+  {
+    "user": "cliente92",
+    "pass": "150427",
+    "expire": "2026-12-31",
+    "device": "ANN2-0DV5-GON6"
+  },
+  {
+    "user": "cliente93",
+    "pass": "412909",
+    "expire": "2026-12-31",
+    "device": "VGVJ-6847-4JVK"
+  },
+  {
+    "user": "cliente94",
+    "pass": "367112",
+    "expire": "2026-12-31",
+    "device": "SO53-MYPX-UFAD"
+  },
+  {
+    "user": "cliente95",
+    "pass": "764438",
+    "expire": "2026-12-31",
+    "device": "EWT4-U78R-806A"
+  },
+  {
+    "user": "cliente96",
+    "pass": "648129",
+    "expire": "2026-12-31",
+    "device": "YHLA-D3U5-L0MI"
+  },
+  {
+    "user": "cliente97",
+    "pass": "396283",
+    "expire": "2026-12-31",
+    "device": "QHEC-5FTG-ZP25"
+  },
+  {
+    "user": "cliente98",
+    "pass": "103995",
+    "expire": "2026-12-31",
+    "device": "A7M2-5OPU-UEE7"
+  },
+  {
+    "user": "cliente99",
+    "pass": "498053",
+    "expire": "2026-12-31",
+    "device": "IH6V-I0AR-BXQ2"
+  },
+  {
+    "user": "cliente100",
+    "pass": "197641",
+    "expire": "2026-12-31",
+    "device": "JZOP-HUF4-L23Y"
+  }
+]
