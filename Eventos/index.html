@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Streaming en Vivo</title>
+    
+    <!-- CSS oficial de Video.js para el reproductor -->
+    <link href="https://zencdn.net" rel="stylesheet" />
+    
+    <style>
+        /* Estilos generales con los colores solicitados: Negro, Rojo y Blanco */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000; /* Fondo Negro */
+            color: #ffffff; /* Texto Blanco */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        /* Encabezado */
+        .header-streaming {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .header-streaming h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #ffffff; /* Texto Blanco */
+            text-transform: uppercase;
+        }
+
+        /* Etiqueta parpadeante "EN VIVO" en Rojo */
+        .badge-vivo {
+            display: inline-block;
+            background-color: #ff0000; /* Fondo Rojo */
+            color: #ffffff; /* Texto Blanco */
+            padding: 5px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 8px;
+            text-transform: uppercase;
+            animation: parpadeo 1.5s infinite;
+        }
+
+        @keyframes parpadeo {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+
+        /* Contenedor del reproductor */
+        .contenedor-reproductor {
+            width: 100%;
+            max-width: 850px;
+            border: 3px solid #ffffff; /* Borde Rojo */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.3); /* Brillo Rojo sutil */
+            background-color: #000000;
+        }
+
+        /* Ajustes adaptables para el video */
+        .video-js {
+            width: 100% !important;
+            height: auto !important;
+            aspect-ratio: 16 / 9;
+        }
+
+        /* Personalización de los botones de Video.js a color Rojo */
+        .video-js .vjs-big-play-button {
+            background-color: rgba(255, 0, 0, 0.8) !important; /* Botón central Rojo */
+            border-color: #ffffff !important; /* Borde Blanco */
+            color: #ffffff !important;
+            width: 80px !important;
+            height: 80px !important;
+            line-height: 76px !important;
+            border-radius: 50% !important;
+        }
+
+        .video-js:hover .vjs-big-play-button {
+            background-color: #ff0000 !important; /* Rojo intenso al pasar el mouse */
+            transform: scale(1.05);
+            transition: all 0.2s ease;
+        }
+
+        .video-js .vjs-play-progress, 
+        .video-js .vjs-volume-level {
+            background-color: #ff0000 !important; /* Barra de progreso Roja */
+        }
+
+        /* Asegurar que los botones de control (incluyendo pantalla completa) se mantengan legibles */
+        .video-js .vjs-control-bar {
+            background-color: rgba(0, 0, 0, 0.7) !important;
+        }
+
+        /* Pie de página */
+        .footer-streaming {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-streaming">
+        <h1>Transmisión Oficial</h1>
+        <div class="badge-vivo">● En Vivo</div>
+    </div>
+
+    <div class="contenedor-reproductor">
+        <!-- Reproductor de Video con atributos forzados para pantalla completa e iOS -->
+        <video 
+            id="reproductor-iptv" 
+            class="video-js vjs-default-skin vjs-big-play-centered" 
+            controls 
+            preload="auto"
+            playsinline
+            webkit-playsinline
+            poster="https://unsplash.com"
+        >
+            <!-- URL DE TU TRANSMISIÓN EN VIVO CORREGIDA -->
+            <source src="https://d3kzwqwnq1f7tq.cloudfront.net/out/v1/0fd608d0807c48edb4713da6b80e8c34/index_6.m3u8?z=b" type="application/x-mpegURL">
+            <p class="vjs-no-js">
+                Para ver este video, por favor activa JavaScript o usa un navegador web moderno.
+            </p>
+        </video>
+    </div>
+
+    <div class="footer-streaming">
+        <p>Señal optimizada para Computadoras y Dispositivos Móviles</p>
+    </div>
+
+    <!-- Script oficial de Video.js -->
+    <script src="https://zencdn.net"></script>
+    <script>
+        // Configuración y encendido del reproductor mediante JavaScript
+        const player = videojs('reproductor-iptv', {
+            fluid: true,       // Hace que el video cambie de tamaño según la pantalla
+            liveui: true,      // Activa los controles específicos para transmisiones en vivo
+            autoplay: false,   // No arranca solo para evitar bloqueos de audio en los navegadores
+            responsive: true,
+            controlBar: {
+                fullscreenToggle: true // Fuerza la aparición del botón de pantalla completa en la barra
+            }
+        });
+
+        // Forzar controles nativos en iPhone si el reproductor web es bloqueado por el sistema operativo
+        player.ready(function() {
+            if (player.tech_ && player.tech_.el_) {
+                player.tech_.el_.setAttribute('playsinline', 'true');
+                player.tech_.el_.setAttribute('webkit-playsinline', 'true');
+            }
+        });
+
+        // Detector de errores por si la señal se cae de origen
+        player.on('error', function() {
+            console.error('La señal en vivo no se encuentra disponible en este momento.');
+        });
+    </script>
+</body>
+</html>
