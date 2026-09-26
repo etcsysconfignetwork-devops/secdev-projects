@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta name="theme-color" content="#ff0000">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <title>Xsports</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HLS -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <!-- Shaka Player -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.16.4/shaka-player.compiled.js"></script>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     LOGIN
+========================================================= -->
+
+<section id="loginScreen" class="screen login-screen">
+
+    <div class="login-box">
+
+        <div class="logo-container">
+
+            <div class="logo-x">
+                X
+            </div>
+
+            <h1>Xsports</h1>
+
+            <p>Live Sports</p>
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="username">
+                Usuario
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                autocomplete="username"
+                placeholder="Ingrese su usuario"
+            >
+
+        </div>
+
+        <div class="input-group">
+
+            <label for="password">
+                Contraseña
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                autocomplete="current-password"
+                placeholder="Ingrese su contraseña"
+            >
+
+        </div>
+
+        <button
+            id="loginButton"
+            class="main-button"
+        >
+            INGRESAR
+        </button>
+
+        <div
+            id="loginError"
+            class="login-error"
+        ></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EVENTOS
+========================================================= -->
+
+<section
+    id="eventsScreen"
+    class="screen events-screen hidden"
+>
+
+    <header class="top-bar">
+
+        <div class="brand">
+
+            <span class="brand-x">
+                X
+            </span>
+
+            <span>
+                sports
+            </span>
+
+        </div>
+
+        <div class="top-actions">
+
+            <button
+                id="installButton"
+                class="install-button hidden"
+            >
+                INSTALAR
+            </button>
+
+            <button
+                id="logoutButton"
+                class="logout-button"
+            >
+                CERRAR SESIÓN
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main class="events-container">
+
+        <div class="section-title">
+
+            <h2>
+                Eventos en vivo
+            </h2>
+
+            <span id="eventCounter">
+                0 eventos
+            </span>
+
+        </div>
+
+
+        <div
+            id="eventsGrid"
+            class="events-grid"
+        ></div>
+
+    </main>
+
+</section>
+
+
+<!-- =========================================================
+     REPRODUCTOR
+========================================================= -->
+
+<section
+    id="playerScreen"
+    class="player-screen hidden"
+>
+
+    <div class="player-header">
+
+        <button
+            id="backButton"
+            class="player-button"
+        >
+            ← EVENTOS
+        </button>
+
+        <div
+            id="playerTitle"
+            class="player-title"
+        >
+            Xsports
+        </div>
+
+    </div>
+
+
+    <div class="video-container">
+
+        <video
+            id="videoPlayer"
+            controls
+            playsinline
+            autoplay
+        ></video>
+
+        <div
+            id="playerLoading"
+            class="player-loading"
+        >
+
+            <div class="spinner"></div>
+
+            <span>
+                Cargando transmisión...
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="playerError"
+        class="player-error"
+    ></div>
+
+</section>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
