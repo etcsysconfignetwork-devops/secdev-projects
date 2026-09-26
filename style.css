@@ -1,0 +1,948 @@
+/* =========================================================
+   XSPORTS
+   NEGRO / ROJO / BLANCO
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+
+    width: 100%;
+    min-height: 100%;
+
+    background: #000;
+
+    color: #fff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+body {
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   UTILIDADES
+========================================================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================================================
+   PANTALLAS
+========================================================= */
+
+.screen {
+
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+
+/* =========================================================
+   LOGIN
+========================================================= */
+
+.login-screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #260000 0%,
+            #080000 35%,
+            #000 75%
+        );
+
+}
+
+
+/* Caja */
+
+.login-box {
+
+    width: min(420px, 100%);
+
+    padding: 38px 30px;
+
+    background: rgba(10, 10, 10, 0.96);
+
+    border: 1px solid #330000;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 0, 0.25),
+        0 0 60px rgba(255, 0, 0, 0.08);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* Línea superior */
+
+.login-box::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #ff0000;
+
+    box-shadow:
+        0 0 15px #ff0000;
+
+}
+
+
+/* Logo */
+
+.logo-container {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+.logo-x {
+
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 10px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background: #ff0000;
+
+    color: #fff;
+
+    font-size: 42px;
+    font-weight: 900;
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 0, .55);
+
+}
+
+.logo-container h1 {
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+
+}
+
+.logo-container p {
+
+    margin-top: 5px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* Inputs */
+
+.input-group {
+
+    margin-bottom: 18px;
+
+}
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #ddd;
+
+}
+
+.input-group input {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #080808;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    transition: .2s;
+
+}
+
+.input-group input:focus {
+
+    border-color: #ff0000;
+
+    box-shadow:
+        0 0 12px rgba(255, 0, 0, .22);
+
+}
+
+
+/* Botón */
+
+.main-button {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #ff0000;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    font-weight: 900;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.main-button:hover {
+
+    background: #d90000;
+
+    transform: translateY(-1px);
+
+}
+
+.main-button:active {
+
+    transform: scale(.98);
+
+}
+
+
+/* Error */
+
+.login-error {
+
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #ff4444;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    width: 100%;
+
+    min-height: 65px;
+
+    padding:
+        10px
+        max(18px, env(safe-area-inset-right))
+        10px
+        max(18px, env(safe-area-inset-left));
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, .96);
+
+    border-bottom: 1px solid #260000;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+/* Marca */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 25px;
+
+    font-weight: 900;
+
+}
+
+.brand-x {
+
+    color: #ff0000;
+
+}
+
+
+/* Acciones */
+
+.top-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+.logout-button,
+.install-button {
+
+    border: 1px solid #444;
+
+    border-radius: 8px;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 9px 13px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.logout-button:hover,
+.install-button:hover {
+
+    border-color: #ff0000;
+
+}
+
+.install-button {
+
+    background: #ff0000;
+
+    border-color: #ff0000;
+
+}
+
+
+/* =========================================================
+   EVENTOS
+========================================================= */
+
+.events-container {
+
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 25px 18px 50px;
+
+}
+
+.section-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.section-title h2 {
+
+    font-size: 22px;
+
+}
+
+.section-title span {
+
+    color: #888;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.events-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(155px, 1fr));
+
+    gap: 15px;
+
+}
+
+
+/* Tarjeta */
+
+.event-card {
+
+    min-height: 180px;
+
+    padding: 15px;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #111,
+            #060606
+        );
+
+    color: #fff;
+
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition:
+        transform .15s,
+        border-color .15s,
+        box-shadow .15s,
+        background .15s;
+
+    outline: none;
+
+}
+
+
+/* Icono */
+
+.event-icon {
+
+    width: 82px;
+    height: 82px;
+
+    margin-bottom: 13px;
+
+    border-radius: 15px;
+
+    border: 1px solid #333;
+
+    background: #0c0c0c;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+}
+
+.event-icon img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.event-icon-placeholder {
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    color: #ff0000;
+
+}
+
+
+/* Nombre */
+
+.event-name {
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+}
+
+
+/* Tipo */
+
+.event-type {
+
+    margin-top: 7px;
+
+    color: #777;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* Foco TV */
+
+.event-card:focus,
+.event-card.focused {
+
+    border-color: #fff;
+
+    background: #fff;
+
+    color: #000;
+
+    transform: scale(1.04);
+
+    box-shadow:
+        0 0 0 2px #ff0000,
+        0 0 25px rgba(255, 0, 0, .45);
+
+    z-index: 5;
+
+}
+
+.event-card:focus .event-type,
+.event-card.focused .event-type {
+
+    color: #555;
+
+}
+
+.event-card:focus .event-icon-placeholder,
+.event-card.focused .event-icon-placeholder {
+
+    color: #ff0000;
+
+}
+
+
+/* =========================================================
+   PLAYER
+========================================================= */
+
+.player-screen {
+
+    width: 100vw;
+
+    min-height: 100vh;
+
+    background: #000;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.player-header {
+
+    height: 60px;
+
+    flex-shrink: 0;
+
+    padding: 8px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #050505;
+
+    border-bottom: 1px solid #222;
+
+}
+
+.player-button {
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    background: #111;
+
+    color: #fff;
+
+    padding: 10px 14px;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+}
+
+.player-button:hover {
+
+    border-color: #ff0000;
+
+}
+
+.player-title {
+
+    max-width: 55%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* Video */
+
+.video-container {
+
+    position: relative;
+
+    width: 100%;
+
+    flex: 1;
+
+    min-height: 0;
+
+    background: #000;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.video-container video {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-height: calc(100vh - 60px);
+
+    object-fit: contain;
+
+    background: #000;
+
+}
+
+
+/* Loading */
+
+.player-loading {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: rgba(0, 0, 0, .65);
+
+    pointer-events: none;
+
+}
+
+.spinner {
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    border: 4px solid #333;
+
+    border-top-color: #ff0000;
+
+    animation:
+        spin .8s linear infinite;
+
+}
+
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* Error */
+
+.player-error {
+
+    min-height: 0;
+
+    padding: 0 15px;
+
+    color: #ff4444;
+
+    background: #000;
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .login-box {
+
+        padding: 30px 22px;
+
+    }
+
+    .events-container {
+
+        padding: 20px 12px 40px;
+
+    }
+
+    .events-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+
+    }
+
+    .event-card {
+
+        min-height: 165px;
+
+        padding: 10px;
+
+    }
+
+    .event-icon {
+
+        width: 68px;
+        height: 68px;
+
+    }
+
+    .event-name {
+
+        font-size: 12px;
+
+    }
+
+    .brand {
+
+        font-size: 22px;
+
+    }
+
+    .logout-button,
+    .install-button {
+
+        padding: 8px 9px;
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    .events-grid {
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   ANDROID TV / PANTALLAS GRANDES
+========================================================= */
+
+@media (min-width: 1001px) {
+
+    .events-grid {
+
+        grid-template-columns:
+            repeat(auto-fill, minmax(180px, 1fr));
+
+    }
+
+    .event-card {
+
+        min-height: 200px;
+
+    }
+
+}
+
+
+/* =========================================================
+   PANTALLA TÁCTIL
+========================================================= */
+
+button,
+.event-card,
+input {
+
+    -webkit-tap-highlight-color:
+        transparent;
+
+}
+
+
+/* =========================================================
+   SAFE AREA
+========================================================= */
+
+@supports (padding: env(safe-area-inset-top)) {
+
+    .top-bar {
+
+        padding-top:
+            max(
+                10px,
+                env(safe-area-inset-top)
+            );
+
+    }
+
+}
