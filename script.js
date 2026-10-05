@@ -643,7 +643,7 @@ function renderEvents() {
 
                     ${escapeHTML(
                         event.type ||
-                        "M3U8"
+                        ""
                     )}
 
                 </div>
