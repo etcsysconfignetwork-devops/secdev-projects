@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "TigoSports1",
-        "type": "m3u8",
+        "type": "",
         "url": "https://lbgo.bozztv.com/ssh101/ssh101/events2py/playlist.m3u8",
         "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
     },
