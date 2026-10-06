@@ -85,24 +85,24 @@
     },
     {
         "id": 13,
-        "name": "Evento 13",
+        "name": "FOX SPORTS3",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/19723.m3u8",
+        "icon": "https://i.ibb.co/HT66ns5/FOX-Sports-3-AR.png"
     },
     {
         "id": 14,
-        "name": "Evento 14",
+        "name": "TNT SPORT",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/327045.m3u8",
+        "icon": "https://i.ibb.co/vCVx3Qyc/tnt-sports-chile-logo-png-seeklogo-400914.png"
     },
     {
         "id": 15,
-        "name": "Evento 15",
+        "name": "TYC SPORT",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/327048.m3u8",
+        "icon": "https://i.ibb.co/60QvHcnr/R-2.png"
     },
     {
         "id": 16,
