@@ -71,17 +71,17 @@
     },
     {
         "id": 11,
-        "name": "Evento 11",
+        "name": "FOX SPORTS",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/8229.m3u8",
+        "icon": "https://i.ibb.co/VpmSTrq8/Logo-Fox-Sports-Argentina-2023-copy-1350x900.png"
     },
     {
         "id": 12,
-        "name": "Evento 12",
+        "name": "FOX SPORTS2",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/8297.m3u8",
+        "icon": "https://i.ibb.co/xqZR62PS/FOX-Sports-2-AR.png"
     },
     {
         "id": 13,
