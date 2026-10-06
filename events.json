@@ -50,24 +50,24 @@
     },
     {
         "id": 8,
-        "name": "Evento 08",
+        "name": "ESPN6",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/327984.m3u8",
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-6_c072dcbdfd294f9c8bfe31537d979156.png"
     },
     {
         "id": 9,
-        "name": "Evento 09",
+        "name": "ESPN7",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/328146.m3u8",
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-7_4ff4919cca464e00bc0089db9facd438.png"
     },
     {
         "id": 10,
-        "name": "Evento 10",
+        "name": "ESPN PREMIUM",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "http://lotv.plus:80/fieratvpro/R745DQeSrm/196542.m3u8",
+        "icon": "https://i.ibb.co/0jSPkhK/1917793265-ESPNPremium-11-png-c58d52a209062a470b942de50e11f529.png"
     },
     {
         "id": 11,
