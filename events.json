@@ -1,0 +1,184 @@
+[
+    {
+        "id": 1,
+        "name": "TigoSports1",
+        "type": "m3u8",
+        "url": "http://45.170.130.224:8000/play/a04k/index.m3u8?hls",
+        "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
+    },
+    {
+        "id": 2,
+        "name": "TigoSports2",
+        "type": "m3u8",
+        "url": "https://stmv3.voxtvhd.com.br/toptop/toptop/playlist.m3u8",
+        "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
+    },
+    {
+        "id": 3,
+        "name": "TigoSports3",
+        "type": "m3u8",
+        "url": "http://45.170.130.224:8000/play/a04i/index.m3u8",
+        "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
+    },
+    {
+        "id": 4,
+        "name": "TigoSportsPlus",
+        "type": "m3u8",
+        "url": "http://45.170.130.224:8000/play/a04k/index.m3u8?hls",
+        "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
+    },
+    {
+        "id": 5,
+        "name": "Evento 05",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 6,
+        "name": "FOX SPORTS",
+        "type": "m3u8",
+        "url": "http://45.134.141.161:2200/ARG/FOX_Sports_1_Argentina_HD/tracks-v1a1/mono.m3u8",
+        "icon": "https://imagizer.imageshack.com/img922/9356/8Ke1xn.png"
+    },
+    {
+        "id": 7,
+        "name": "ESPN",
+        "type": "m3u8",
+        "url": "http://45.134.141.161:2200/ARG/ESPN_ARG_1_HD/tracks-v1a1/mono.m3u8",
+        "icon": "https://imagizer.imageshack.com/img921/7548/aRwutP.png"
+    },
+    {
+        "id": 8,
+        "name": "ESPN PREMIUM",
+        "type": "m3u8",
+        "url": "http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8",
+        "icon": "https://imagizer.imageshack.com/img924/1284/VNmHK1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "DSPORTS",
+        "type": "m3u8",
+        "url": "http://45.134.141.161:2200/ARG/DTV_SP_Col/tracks-v1a1/mono.m3u8",
+        "icon": "https://imagizer.imageshack.com/img921/9596/Ozw0rY.png"
+    },
+    {
+        "id": 10,
+        "name": "Evento 10",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 11,
+        "name": "Evento 11",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 12,
+        "name": "Evento 12",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 13,
+        "name": "Evento 13",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 14,
+        "name": "Evento 14",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 15,
+        "name": "Evento 15",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 16,
+        "name": "Evento 16",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 17,
+        "name": "Evento 17",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 18,
+        "name": "Evento 18",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 19,
+        "name": "Evento 19",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 20,
+        "name": "Evento 20",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 21,
+        "name": "Evento 21",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 22,
+        "name": "Evento 22",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 23,
+        "name": "Evento 23",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 24,
+        "name": "Evento 24",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 25,
+        "name": "Evento 25",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    },
+    {
+        "id": 26,
+        "name": "Evento 26",
+        "type": "m3u8",
+        "url": "",
+        "icon": ""
+    }
+]
