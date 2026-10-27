@@ -637,16 +637,7 @@ function renderEvents() {
                         `Evento ${index + 1}`
                     )}
 
-                </div>
-
-                <div class="event-type">
-
-                    ${escapeHTML(
-                        event.type ||
-                        "M3U8"
-                    )}
-
-                </div>
+                
 
             `;
 
