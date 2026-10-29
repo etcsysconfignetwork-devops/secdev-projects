@@ -10,7 +10,7 @@
         "id": 2,
         "name": "TigoSports2",
         "type": "m3u8",
-        "url": "https://lbgo.bozztv.com/ssh101/ssh101/sudhshdhsahd/playlist.m3u8",
+        "url": "",
         "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
     },
     {
@@ -36,52 +36,52 @@
     },
     {
         "id": 6,
-        "name": "FOX SPORTS",
+        "name": "ESPN",
         "type": "m3u8",
-        "url": "",
-        "icon": "https://imagizer.imageshack.com/img922/9356/8Ke1xn.png"
+        "url": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/YzyDW9aGxP2Ofdm9nXW3lA?tags=CH_LOGO"
     },
     {
         "id": 7,
-        "name": "ESPN",
+        "name": "ESPN HD",
         "type": "m3u8",
-        "url": "http://191.97.49.82:8001/play/a00k/index.m3u8",
-        "icon": "https://imagizer.imageshack.com/img921/7548/aRwutP.png"
+        "url": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
+        "icon": "https://i.ibb.co/s37NZCT/espn-1B.png"
     },
     {
         "id": 8,
-        "name": "ESPN PREMIUM",
+        "name": "ESPN2",
         "type": "m3u8",
-        "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/116.m3u8",
-        "icon": "https://imagizer.imageshack.com/img924/1284/VNmHK1.jpg"
+        "url": "https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/xKnV97ikPChURV31DHG-QA?tags=CH_LOGO"
     },
     {
         "id": 9,
-        "name": "DSPORTS",
+        "name": "ESPN3",
         "type": "m3u8",
-        "url": "",
-        "icon": "https://imagizer.imageshack.com/img921/9596/Ozw0rY.png"
+        "url": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/hX_A9FUehJQN6okvA8gX8Q?tags=CH_LOGO"
     },
     {
         "id": 10,
-        "name": "Evento 10",
+        "name": "ESPN4",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "https://barinaslive1.boldmss.com/ESPN_4/ESPN_4.isml/ESPN_4.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/jGyt-p8MW55TcZMkzRBHLw?tags=CH_LOGO"
     },
     {
         "id": 11,
-        "name": "Evento 11",
+        "name": "ESPN5",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "https://barinaslive1.boldmss.com/ESPN_5/ESPN_5.isml/ESPN_5.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/kt4rv4iBE9Hp_hI5xaghHw?tags=CH_LOGO"
     },
     {
         "id": 12,
-        "name": "Evento 12",
+        "name": "ESPN 6",
         "type": "m3u8",
-        "url": "",
-        "icon": ""
+        "url": "https://barinaslive1.boldmss.com/ESPN_6/ESPN_6.isml/ESPN_6.m3u8",
+        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/stPaOp7uRjk9fBMBh45VKg?tags=CH_LOGO"
     },
     {
         "id": 13,
