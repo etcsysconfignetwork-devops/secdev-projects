@@ -39,49 +39,49 @@
         "name": "ESPN",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/YzyDW9aGxP2Ofdm9nXW3lA?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn_660a27baf43344968326c178550f1f3f.png"
     },
     {
         "id": 7,
         "name": "ESPN HD",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8",
-        "icon": "https://i.ibb.co/s37NZCT/espn-1B.png"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn_660a27baf43344968326c178550f1f3f.png"
     },
     {
         "id": 8,
         "name": "ESPN2",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN_2/ESPN_2.isml/ESPN_2.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/xKnV97ikPChURV31DHG-QA?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-2_f45bffc4bea445d1becfc4ab30fa6513.png"
     },
     {
         "id": 9,
         "name": "ESPN3",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN_3/ESPN_3.isml/ESPN_3.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/hX_A9FUehJQN6okvA8gX8Q?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-3_60a2f5ae150748f2871e6ee61ab77086.png"
     },
     {
         "id": 10,
         "name": "ESPN4",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN_4/ESPN_4.isml/ESPN_4.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/jGyt-p8MW55TcZMkzRBHLw?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-4_218857b3502343b3803ff144abfd613f.png"
     },
     {
         "id": 11,
         "name": "ESPN5",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN_5/ESPN_5.isml/ESPN_5.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/kt4rv4iBE9Hp_hI5xaghHw?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-5_adaebf2c8bd7440696f87e844b375975.png"
     },
     {
         "id": 12,
         "name": "ESPN 6",
         "type": "m3u8",
         "url": "https://barinaslive1.boldmss.com/ESPN_6/ESPN_6.isml/ESPN_6.m3u8",
-        "icon": "https://cdn.bo.flow.com.ar/images/content/60/40/stPaOp7uRjk9fBMBh45VKg?tags=CH_LOGO"
+        "icon": "https://solparaguay.qvixprimary.com/assets/resources/img/channels/espn-6_c072dcbdfd294f9c8bfe31537d979156.png"
     },
     {
         "id": 13,
