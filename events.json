@@ -184,7 +184,7 @@
   "id": 27,
   "name": "Evento 27",
   "type": "ts",
-  "url": "URL_DEL_EVENTO",
-  "icon": "./icons/events/event-27.png"
+  "url": "http://bitzpro.net:8080/live/fieratvhd/480335tv/1624829.ts",
+  "icon": ""
 }
 ]
