@@ -180,11 +180,5 @@
         "type": "m3u8",
         "url": "",
         "icon": ""
-    },{
-  "id": 27,
-  "name": "Evento 27",
-  "type": "ts",
-  "url": "http://bitzpro.net:8080/live/fieratvhd/480335tv/1624829.ts",
-  "icon": ""
-}
+    }
 ]
