@@ -180,5 +180,17 @@
         "type": "m3u8",
         "url": "",
         "icon": ""
-    }
+    },
+
+{
+  "id": 28,
+  "name": "Evento",
+  "type": "mpd",
+  "url": "https://d3kzwqwnq1f7tq.cloudfront.net/out/v1/25ca218d53194065bedf6d998ace462e/index.mpd",
+  "icon": "",
+  "drm": {
+    "type": "widevine",
+    "licenseUrl": "https://mrghnngupolsgatcmevw.supabase.co/functions/v1/TIGOSPORTSEVENTOS1"
+  }
+  }
 ]
