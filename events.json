@@ -186,11 +186,11 @@
   "id": 28,
   "name": "Evento",
   "type": "mpd",
-  "url": "https://d3kzwqwnq1f7tq.cloudfront.net/out/v1/25ca218d53194065bedf6d998ace462e/index.mpd",
+  "url": "https://edge-live19-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzkwMjM1Nzc1Iiwic2lwIjoiMTg2LjE1OC4",
   "icon": "",
   "drm": {
     "type": "widevine",
-    "licenseUrl": "https://dl.dropboxusercontent.com/scl/fi/bify73qa6pam1h5op5mg4/tigo3.json?rlkey=r2r6qmvzobpn1tib3n068ap1z&st=2jfgsr87&dl=0"
+    "licenseUrl": "https://results.femon.net/?keyid=c502892e037a9f34827147b2b24e42cf&key=2531bd34bec6c0e8fa4e07aedb261ade"
   }
   }
 ]
