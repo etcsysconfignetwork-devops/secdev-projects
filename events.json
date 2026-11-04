@@ -180,17 +180,5 @@
         "type": "m3u8",
         "url": "",
         "icon": ""
-    },
-
-{
-  "id": 28,
-  "name": "Evento",
-  "type": "mpd",
-  "url": "https://edge-live19-sl.cvattv.com.ar/tok_eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOiIxNzkwMjM1Nzc1Iiwic2lwIjoiMTg2LjE1OC4",
-  "icon": "",
-  "drm": {
-    "type": "widevine",
-    "licenseUrl": "https://results.femon.net/?keyid=c502892e037a9f34827147b2b24e42cf&key=2531bd34bec6c0e8fa4e07aedb261ade"
-  }
-  }
+    }
 ]
