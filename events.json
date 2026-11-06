@@ -1,13 +1,4 @@
 [
-
-{
-  "categories": [
-    {
-      "id": "futbol",
-      "name": "FÚTBOL",
-      "icon": "⚽",
-      "events": [
-
     {
         "id": 1,
         "name": "TigoSports1",
