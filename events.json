@@ -3,7 +3,7 @@
         "id": 1,
         "name": "TigoSports1",
         "type": "m3u8",
-        "url": "http://eventos-a04k.duckdns.org:8000/play/a04k/index.m3u8?hls",
+        "url": "http://eventos-a04k.duckdns.org:8000/play/a04k/index.m3u8",
         "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
     },
     {
