@@ -3,7 +3,7 @@
         "id": 1,
         "name": "TigoSports1",
         "type": "m3u8",
-        "url": "https://fieratvhd.com/hls/fieratv.m3u8",
+        "url": "",
         "icon": "https://i.ibb.co/8D6KXGJ2/tigosports.webp"
     },
     {
@@ -11,14 +11,14 @@
         "name": "TigoSports2",
         "type": "m3u8",
         "url": "",
-        "icon": "https://i.ibb.co/93qCNDPm/file-000000007984820e8ef99f044954fb98.png"
+        "icon": ""
     },
     {
         "id": 3,
         "name": "TigoSports3",
         "type": "m3u8",
         "url": "",
-        "icon": "https://i.ibb.co/93qCNDPm/file-000000007984820e8ef99f044954fb98.png"
+        "icon": ""
     },
     {
         "id": 4,
@@ -31,7 +31,7 @@
         "id": 5,
         "name": "Evento 05",
         "type": "m3u8",
-        "url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlis",
+        "url": "",
         "icon": ""
     },
     {
