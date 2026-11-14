@@ -87,42 +87,42 @@
         "id": 13,
         "name": "ESPN PREMIUM",
         "type": "m3u8",
-        "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/61.m3u8",
+        "url": "",
         "icon": ""
     },
     {
         "id": 14,
         "name": "Evento 14",
         "type": "m3u8",
-        "url": "https://s2.bufaloweb.com/bufalo4/index.m3u8",
+        "url": "",
         "icon": ""
     },
     {
         "id": 15,
         "name": "Evento 15",
         "type": "m3u8",
-        "url": "https://s2.bufaloweb.com/bufalo5/index.m3u8",
+        "url": "",
         "icon": ""
     },
     {
         "id": 16,
         "name": "Evento 16",
         "type": "m3u8",
-        "url": "https://s2.bufaloweb.com/bufalo6/index.m3u8",
+        "url": "",
         "icon": ""
     },
     {
         "id": 17,
         "name": "Evento 17",
         "type": "m3u8",
-        "url": "https://s2.bufaloweb.com/bufalo7/index.m3u8",
+        "url": "",
         "icon": ""
     },
     {
         "id": 18,
         "name": "Evento 18",
         "type": "m3u8",
-        "url": "https://video03.logicahost.com.br/rspremiere/rspremiere/playlist.m3u8",
+        "url": "",
         "icon": ""
     },
     {
