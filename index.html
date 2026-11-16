@@ -232,7 +232,111 @@
      JAVASCRIPT
 ========================================================= -->
 
-<script src="script.js"></script>
+
+<!-- 🔐 XSPORTS - PROTECCIÓN AVANZADA -->
+<script>
+(() => {
+  "use strict";
+
+  // Evitar ejecución duplicada
+  if (window.__xsportsSecurity) return;
+  window.__xsportsSecurity = true;
+
+  // 1. Bloquear menú contextual
+  document.addEventListener("contextmenu", e => {
+    e.preventDefault();
+  });
+
+  // 2. Bloquear selección de texto
+  document.addEventListener("selectstart", e => {
+    if (!e.target.closest("input, textarea")) {
+      e.preventDefault();
+    }
+  });
+
+  // 3. Bloquear arrastrar elementos
+  document.addEventListener("dragstart", e => {
+    e.preventDefault();
+  });
+
+  // 4. Bloquear atajos comunes de inspección
+  document.addEventListener("keydown", e => {
+    const key = e.key.toLowerCase();
+
+    const blocked =
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey &&
+        ["i", "j", "c", "k"].includes(key)) ||
+      (e.ctrlKey && ["u", "s"].includes(key)) ||
+      (e.metaKey && e.altKey && ["i", "j", "c"].includes(key));
+
+    if (blocked) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  }, true);
+
+  // 5. Evitar impresión desde el navegador
+  window.addEventListener("beforeprint", () => {
+    document.body.classList.add("security-hidden");
+  });
+
+  window.addEventListener("afterprint", () => {
+    document.body.classList.remove("security-hidden");
+  });
+
+  // 6. Protección visual ante impresión
+  const style = document.createElement("style");
+  style.textContent = `
+    @media print {
+      body {
+        display: none !important;
+      }
+    }
+
+    .security-hidden {
+      visibility: hidden !important;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // 7. Advertencia al detectar posibles DevTools
+  let devtoolsDetected = false;
+
+  setInterval(() => {
+    const widthDiff =
+      window.outerWidth - window.innerWidth;
+
+    const heightDiff =
+      window.outerHeight - window.innerHeight;
+
+    const detected =
+      widthDiff > 160 || heightDiff > 160;
+
+    if (detected && !devtoolsDetected) {
+      devtoolsDetected = true;
+      console.warn("Xsports: herramientas de inspección detectadas.");
+    }
+
+    if (!detected) {
+      devtoolsDetected = false;
+    }
+  }, 1500);
+
+  // 8. Advertencia en consola
+  console.log(
+    "%cXsports",
+    "color:red;font-size:35px;font-weight:bold;"
+  );
+
+  console.log(
+    "%cAcceso restringido. No modifiques el código de la aplicación.",
+    "color:white;background:black;font-size:14px;padding:8px;"
+  );
+
+})();
+</script>
+
 
 </body>
 
