@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Xsports - Plataforma de eventos deportivos">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>Xsports</title>
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --red: #ff1717;
+            --red-dark: #a90000;
+            --white: #ffffff;
+            --black: #080808;
+            --panel: #111111;
+            --gray: #999999;
+            --border: rgba(255, 255, 255, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            margin: 0;
+            background: var(--black);
+            color: var(--white);
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        /* Fondo */
+
+        .app-background {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(
+                    circle at 50% 35%,
+                    rgba(150, 0, 0, 0.16),
+                    transparent 45%
+                ),
+                linear-gradient(145deg, #050505, #111111 55%, #050505);
+        }
+
+        .app-background::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            opacity: 0.12;
+            background-image:
+                linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+            background-size: 35px 35px;
+        }
+
+        /* Pantallas */
+
+        .screen {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            min-height: 100vh;
+        }
+
+        /* Login */
+
+        #loginScreen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 16px;
+        }
+
+        .login-container {
+            position: relative;
+            width: 100%;
+            max-width: 390px;
+            padding: 3px;
+            overflow: hidden;
+            border-radius: 20px;
+            background: #171717;
+            isolation: isolate;
+            box-shadow:
+                0 0 25px rgba(255, 0, 0, 0.16),
+                0 15px 50px rgba(0, 0, 0, 0.65);
+        }
+
+        .login-container::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: conic-gradient(
+                transparent 0deg,
+                transparent 70deg,
+                var(--red) 120deg,
+                var(--white) 155deg,
+                transparent 205deg,
+                transparent 360deg
+            );
+            animation: neonRotate 5s linear infinite;
+        }
+
+        @keyframes neonRotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .login-content {
+            position: relative;
+            z-index: 1;
+            padding: 36px 25px 30px;
+            border-radius: 18px;
+            background: linear-gradient(145deg, #111111, #080808);
+            text-align: center;
+        }
+
+        .brand {
+            margin: 0 0 8px;
+            color: var(--white);
+            font-family: "Orbitron", sans-serif;
+            font-size: clamp(30px, 8vw, 39px);
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-shadow:
+                0 0 8px rgba(255, 0, 0, 0.8),
+                0 0 22px rgba(255, 0, 0, 0.35);
+        }
+
+        .brand span {
+            color: var(--red);
+        }
+
+        .login-subtitle {
+            margin: 0 0 30px;
+            color: #aaa;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .login-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .login-input {
+            width: 100%;
+            height: 52px;
+            padding: 0 16px;
+            border: 1px solid #383838;
+            border-radius: 9px;
+            outline: none;
+            background: #090909;
+            color: var(--white);
+            font-size: 15px;
+            transition: border-color .25s, box-shadow .25s;
+        }
+
+        .login-input::placeholder {
+            color: #777;
+        }
+
+        .login-input:focus {
+            border-color: var(--red);
+            box-shadow: 0 0 12px rgba(255, 0, 0, 0.22);
+        }
+
+        .login-button {
+            width: 100%;
+            height: 52px;
+            margin-top: 7px;
+            border: 1px solid var(--red);
+            border-radius: 9px;
+            background: linear-gradient(100deg, #a90000, #ff1717);
+            color: var(--white);
+            font-family: "Orbitron", sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: .25s;
+        }
+
+        .login-button:hover,
+        .login-button:focus-visible {
+            outline: none;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            transform: translateY(-1px);
+        }
+
+        .login-button:active {
+            transform: scale(.98);
+        }
+
+        .login-error {
+            min-height: 20px;
+            margin: 15px 0 0;
+            color: #ff5555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .login-footer {
+            margin: 23px 0 0;
+            color: #666;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        /* Barra superior */
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            min-height: 68px;
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(255, 0, 0, 0.35);
+            background: rgba(8, 8, 8, 0.94);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+        }
+
+        .topbar-brand {
+            color: var(--white);
+            font-family: "Orbitron", sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .topbar-brand span {
+            color: var(--red);
+        }
+
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .small-button {
+            min-height: 38px;
+            padding: 0 13px;
+            border: 1px solid #444;
+            border-radius: 7px;
+            background: #151515;
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 700;
+            transition: .2s;
+        }
+
+        .small-button:hover,
+        .small-button:focus-visible {
+            border-color: var(--red);
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 0, 0, .2);
+        }
+
+        .logout-button {
+            border-color: var(--red-dark);
+            color: #ff5555;
+        }
+
+        /* Catálogo */
+
+        .events-content {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 28px 18px 45px;
+        }
+
+        .section-heading {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .section-heading h1 {
+            margin: 0 0 9px;
+            font-family: "Orbitron", sans-serif;
+            font-size: clamp(20px, 5vw, 27px);
+            letter-spacing: 2px;
+        }
+
+        .section-heading h1 span {
+            color: var(--red);
+        }
+
+        .section-heading p {
+            margin: 0;
+            color: var(--gray);
+            font-size: 13px;
+        }
+
+        .event-counter {
+            display: inline-block;
+            margin-top: 13px;
+            padding: 6px 12px;
+            border: 1px solid rgba(255, 0, 0, .35);
+            border-radius: 20px;
+            color: #ff6666;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        #eventsGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            width: 100%;
+        }
+
+        /* Botones generados por script.js */
+
+        #eventsGrid button,
+        #eventsGrid .event-button {
+            min-height: 75px;
+            border: 1px solid #333;
+            border-left: 3px solid var(--red);
+            border-radius: 10px;
+            background: linear-gradient(110deg, #171717, #0c0c0c);
+            color: var(--white);
+            transition: .2s;
+        }
+
+        #eventsGrid button:hover,
+        #eventsGrid button:focus-visible,
+        #eventsGrid .event-button:hover,
+        #eventsGrid .event-button:focus-visible {
+            border-color: var(--red);
+            outline: none;
+            background: #1c1010;
+            box-shadow: 0 0 16px rgba(255, 0, 0, .18);
+            transform: translateY(-2px);
+        }
+
+        /* Reproductor */
+
+        #playerScreen {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #000;
+        }
+
+        .player-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            min-height: 58px;
+            padding: 10px 15px;
+            border-bottom: 1px solid #282828;
+            background: #090909;
+        }
+
+        .player-title {
+            overflow: hidden;
+            color: var(--white);
+            font-family: "Orbitron", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .back-button {
+            flex-shrink: 0;
+            min-height: 38px;
+            padding: 0 15px;
+            border: 1px solid var(--red);
+            border-radius: 7px;
+            background: #170606;
+            color: var(--white);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .back-button:hover,
+        .back-button:focus-visible {
+            outline: none;
+            background: var(--red-dark);
+        }
+
+        .video-container {
+            position: relative;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-height: 250px;
+            overflow: hidden;
+            background: #000;
+        }
+
+        #videoPlayer {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-height: calc(100vh - 60px);
+            background: #000;
+            object-fit: contain;
+        }
+
+        .player-loading,
+        .player-error {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, .94);
+            text-align: center;
+        }
+
+        .player-loading {
+            color: var(--white);
+            font-size: 14px;
+        }
+
+        .loading-spinner {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 15px;
+            border: 3px solid #333;
+            border-top-color: var(--red);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .player-error {
+            z-index: 20;
+            color: var(--white);
+        }
+
+        .player-error h2 {
+            margin: 0 0 10px;
+            color: var(--red);
+            font-family: "Orbitron", sans-serif;
+            font-size: 17px;
+        }
+
+        .player-error p {
+            max-width: 420px;
+            color: #ccc;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* Aviso de protección */
+
+        #securityWarning {
+            position: fixed;
+            z-index: 99999;
+            right: 15px;
+            bottom: 15px;
+            max-width: calc(100% - 30px);
+            padding: 12px 16px;
+            border: 1px solid var(--red);
+            border-radius: 8px;
+            background: #160606;
+            color: var(--white);
+            font-size: 12px;
+            box-shadow: 0 0 18px rgba(255, 0, 0, .25);
+        }
+
+        /* Responsive */
+
+        @media (max-width: 600px) {
+            .topbar {
+                min-height: 60px;
+                padding: 10px 12px;
+            }
+
+            .topbar-brand {
+                font-size: 19px;
+            }
+
+            .small-button {
+                min-height: 35px;
+                padding: 0 9px;
+                font-size: 11px;
+            }
+
+            .events-content {
+                padding: 23px 13px 35px;
+            }
+
+            #eventsGrid {
+                grid-template-columns: 1fr;
+                gap: 11px;
+            }
+
+            #eventsGrid button,
+            #eventsGrid .event-button {
+                min-height: 68px;
+            }
+
+            .player-header {
+                min-height: 52px;
+                padding: 8px 10px;
+            }
+
+            .video-container {
+                min-height: 220px;
+            }
+        }
+
+        @media (orientation: landscape) and (max-height: 500px) {
+            #loginScreen {
+                padding: 12px;
+            }
+
+            .login-content {
+                padding: 22px;
+            }
+
+            .login-subtitle {
+                margin-bottom: 17px;
+            }
+
+            .login-fields {
+                gap: 10px;
+            }
+
+            .login-input,
+            .login-button {
+                height: 44px;
+            }
+
+            .login-footer {
+                margin-top: 12px;
+            }
+        }
+
+        /* Impresión */
+
+        @media print {
+            body,
+            body * {
+                visibility: hidden !important;
+            }
+        }
+
+        /* Accesibilidad */
+
+        button:focus-visible,
+        input:focus-visible {
+            outline: 2px solid var(--white);
+            outline-offset: 3px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app-background" aria-hidden="true"></div>
+
+    <!-- LOGIN -->
+    <main id="loginScreen" class="screen">
+
+        <section class="login-container" aria-label="Acceso a Xsports">
+
+            <div class="login-content">
+
+                <h1 class="brand">X<span>SPORTS</span></h1>
+
+                <p class="login-subtitle">
+                    Plataforma deportiva
+                </p>
+
+                <div class="login-fields">
+
+                    <input
+                        type="text"
+                        id="username"
+                        class="login-input"
+                        placeholder="Usuario"
+                        autocomplete="username"
+                        autocapitalize="none"
+                        spellcheck="false"
+                        aria-label="Usuario"
+                    >
+
+                    <input
+                        type="password"
+                        id="password"
+                        class="login-input"
+                        placeholder="Contraseña"
+                        autocomplete="current-password"
+                        aria-label="Contraseña"
+                    >
+
+                    <button
+                        type="button"
+                        id="loginButton"
+                        class="login-button"
+                    >
+                        INICIAR SESIÓN
+                    </button>
+
+                </div>
+
+                <p
+                    id="loginError"
+                    class="login-error"
+                    role="alert"
+                    aria-live="polite"
+                ></p>
+
+                <p class="login-footer">
+                    XSPORTS · ACCESO PRIVADO
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- CATÁLOGO DE EVENTOS -->
+    <main id="eventsScreen" class="screen" hidden>
+
+        <header class="topbar">
+
+            <div class="topbar-brand">
+                X<span>SPORTS</span>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button
+                    type="button"
+                    id="installButton"
+                    class="small-button"
+                    hidden
+                >
+                    INSTALAR
+                </button>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="small-button logout-button"
+                >
+                    CERRAR SESIÓN
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="events-content">
+
+            <div class="section-heading">
+
+                <h1>
+                    EVENTOS <span>DEPORTIVOS</span>
+                </h1>
+
+                <p>
+                    Selecciona un evento para comenzar a reproducir
+                </p>
+
+                <div
+                    id="eventCounter"
+                    class="event-counter"
+                    aria-live="polite"
+                >
+                    EVENTOS DISPONIBLES
+                </div>
+
+            </div>
+
+            <div
+                id="eventsGrid"
+                aria-label="Lista de eventos"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- REPRODUCTOR -->
+    <main id="playerScreen" class="screen" hidden>
+
+        <header class="player-header">
+
+            <div
+                id="playerTitle"
+                class="player-title"
+            >
+                Xsports Player
+            </div>
+
+            <button
+                type="button"
+                id="backButton"
+                class="back-button"
+            >
+                SALIR
+            </button>
+
+        </header>
+
+        <section class="video-container">
+
+            <video
+                id="videoPlayer"
+                controls
+                playsinline
+                webkit-playsinline
+                preload="metadata"
+                disablepictureinpicture
+            ></video>
+
+            <div
+                id="playerLoading"
+                class="player-loading"
+                hidden
+                aria-live="polite"
+            >
+                <div class="loading-spinner"></div>
+                <span>Cargando evento...</span>
+            </div>
+
+            <div
+                id="playerError"
+                class="player-error"
+                hidden
+     
